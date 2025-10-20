@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header a{
+    position: absolute;
+    left: 10px;
+}
+
+h1 {
+    text-align: center;
+    background-color: yellowgreen;
+    width: 200px;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: dotted 3px black;
+
+}
+
+a > img{
+    border: solid 2px blue;
+    border-radius: 50%;
+    max-width: 35px;
+    transition: 0.15s;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-auto-rows: 230px;
+}
+
+.bilde {
+    border: 4px solid yellowgreen;
+}
+
+.bilde img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.hoyboks {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.bredboks {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container>.stor {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#boks2 {
+    grid-row: 6/7;
+}
+
+.hund {
+    border-radius: 50%;
+}
+
+#hund {
+    border-radius: 50%;
+}
+
+img:hover {
+    transform: scale(1.05);
+}

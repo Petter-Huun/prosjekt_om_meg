@@ -1,0 +1,128 @@
+    /* minimal css reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+    /* END minimal css reset*/
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+header>h2 {
+    font-size: 35px;
+}
+
+main {
+    background-color: whitesmoke;
+}
+
+.boks {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boks>h3 {
+    text-align: center;
+    margin: 5px;
+    
+}
+
+.boks>p {
+    text-align: center;
+    width: 180px;
+    margin: auto;
+}
+
+.boks>img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#boks1{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.bilde1{
+    max-width: 200px;
+    border-radius: 10px;
+
+}
+
+/*.bredboks {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+*/
+
+.seksjon1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px;
+}
+
+a {
+    border: 2px solid rgb(62, 109, 228);
+    border-radius: 10px;
+    padding: 3px;
+    color: rgb(62, 109, 228);
+    text-decoration: none;
+    margin: auto;
+    transition: 1s;
+}
+
+a > img{
+    border-radius: 7px;
+    object-fit: contain;
+    transition: 1s;
+    max-width: 250px;
+}
+
+a:hover{
+    transform: scale(1.03);
+    background-color: rgb(62, 109, 228);
+    color: whitesmoke;
+}
+
+a > img:hover{
+            transform: scale(1.02);
+        }
+
+.knapp{
+    transition: 0s;
+}
