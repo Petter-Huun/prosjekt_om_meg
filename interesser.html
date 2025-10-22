@@ -1,71 +1,112 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mine interesser</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
             margin: 0;
         }
-        img{
-            max-width: 300px;
+
+        img {
             display: block;
             object-fit: cover;
-            
         }
-        header{
+
+        .bilde1{
+            max-width: 450px;
+        }
+
+        .bilde2{
+            max-width: 650px;
+        }
+
+        header {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        main{
-            display: flex;
-        }
-        section{
+            position: relative;
             padding: 5px;
         }
-        #sec1{
+
+        header a {
+            position: absolute;
+            left: 10px;
+        }
+
+        a>img {
+            border: solid 2px blue;
+            border-radius: 50%;
+            max-width: 35px;
+            transition: 0.15s;
+        }
+
+        a > img:hover {
+            transform: scale(1.05);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            padding: 5px;
+        }
+
+        #sec1 {
             background-color: lightseagreen;
-            max-width: 50%;
+            max-width: 100%;
+            min-height: 100vh;
         }
-        #sec2{
+
+        #sec2 {
             background-color: yellowgreen;
-            max-width: 50%;
+            max-width: 100%;
+            min-height: 100vh;
         }
-        .section1{
+
+        .section1 {
             display: flex;
         }
-        .section2{
+
+        .section2 {
             display: flex;
         }
-        img > .section2{
+
+        img>.section2 {
             width: 100px;
         }
     </style>
 </head>
+
 <body>
     <header>
-    
-    <a href="hovedside.html">Hovedsiden</a>
 
-    <h1>Mine interesser</h1>
-    
+        <a href="hovedside.html">
+            <img src="https://image.spreadshirtmedia.net/image-server/v1/products/T1459A839MPA4459PT28X0Y31D11069033W10000H3770Cx000000/views/1,width=800,height=800,appearanceId=839,backgroundColor=F2F2F2/arrow-til-venstre-klistremerke.jpg"
+                alt="Bilde av pil">
+        </a>
+
+        <h1>Mine interesser</h1>
+
     </header>
 
     <main>
         <section id="sec1">
             <h3>Alpint</h3>
             <div class="section1">
-            <p>
-                Jeg har stått på ski hele livet og besøkt
-                alle de store skisentrene i Norge og flere
-                rundt om i Europa. Jeg står ofte på ski på hytta
-                eller her hjemme. Jeg er også skitrener for 8-9
-                år gamle barn. 
-            </p>
-            <img src="https://snow-how.de/media/image/6e/30/7a/blog-was-ist-eigentlich-ein-slalomcarver.jpg">
+                <p>
+                    Jeg har stått på ski hele livet og besøkt
+                    alle de store skisentrene i Norge og flere
+                    rundt om i Europa. Jeg står ofte på ski på hytta
+                    eller her hjemme. Jeg er også skitrener for 8-9
+                    år gamle barn.
+                </p>
+                <img class="bilde1" src="https://snow-how.de/media/image/6e/30/7a/blog-was-ist-eigentlich-ein-slalomcarver.jpg">
 
 
             </div>
@@ -74,19 +115,21 @@
         <section id="sec2">
             <h3>Fotball</h3>
             <div class="section2">
-            <p>
-                Jeg har spilt fotball i mange år og følger 
-                aktivt med på spesielt engelsk fotball. 
-                favorittlaget mitt er liverpool, og jeg ser 
-                hver kamp de spiller. Jeg vil gjerne dra til
-                Anfield å se de spille.
-            </p>
-            <img src="https://www.aljazeera.com/wp-content/uploads/2025/04/GettyImages-2212267479-1745777196.jpg?resize=1800%2C1800">
+                <p>
+                    Jeg har spilt fotball i mange år og følger
+                    aktivt med på spesielt engelsk fotball.
+                    favorittlaget mitt er liverpool, og jeg ser
+                    hver kamp de spiller. Jeg vil gjerne dra til
+                    Anfield å se de spille.
+                </p>
+                <img class="bilde2"
+                    src="https://www.aljazeera.com/wp-content/uploads/2025/04/GettyImages-2212267479-1745777196.jpg?resize=1800%2C1800">
 
             </div>
         </section>
     </main>
-        
-    
+
+
 </body>
+
 </html>
