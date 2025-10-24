@@ -9,16 +9,30 @@
     <style>
         *{
             box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            background-color: aliceblue;
         }
         header{
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: rgb(218, 218, 218);
+            margin-bottom: 10px;
+        }
+        .s1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 8px;
         }
         table {
             background-color: antiquewhite;
             border-collapse: collapse;
             border: solid black 5px;
+            width: 95%;
         }
 
         tr {
@@ -28,6 +42,7 @@
         td {
             padding: 5px;
             border: solid black 1px;
+            font-size: 18px;
         }
 
         .overskrift td {
@@ -50,80 +65,84 @@
 
     <main>
 
-        
-        <h2>Min Timeplan</h2>
-        
-        <table>
-            <tr class="overskrift">
-                <td>time</td>
-                <td>økt</td>
-                <td>Mandag</td>
-                <td>Tirsdag</td>
-                <td>Onsdag</td>
-                <td>Torsdag</td>
-                <td>Fredag</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td rowspan="2">1</td>
-                <td rowspan="2">IT</td>
-                <td>Fri</td>
-                <td rowspan="2">Matte</td>
-                <td rowspan="2">Fysikk</td>
-                <td rowspan="2">Religion</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Norsk</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td rowspan="2">2</td>
-                <td rowspan="2">Norsk</td>
-                <td rowspan="2">Norsk</td>
-                <td rowspan="2">Historie</td>
-                <td rowspan="2">Matte</td>
-                <td rowspan="2">IT</td>
-            </tr>
-            <tr>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>3</td>
-                <td>friminutt</td>
-                <td>friminutt</td>
-                <td>friminutt</td>
-                <td>friminutt</td>
-                <td>friminutt</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td rowspan="2">4</td>
-                <td rowspan="2">Norsk</td>
-                <td rowspan="2">Matte</td>
-                <td rowspan="2">IT</td>
-                <td rowspan="2">Fri</td>
-                <td rowspan="2">Historie</td>
-            </tr>
-            <tr>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td rowspan="2">5</td>
-                <td rowspan="2">Gym</td>
-                <td rowspan="2">Fysikk</td>
-                <td rowspan="2">Fri</td>
-                <td rowspan="2">Fri</td>
-                <td rowspan="2">Fri</td>
-            </tr>
-            <tr>
-                <td>9</td>
-            </tr>
-        </table>
+        <section class="s1">
 
-        
+            
+            
+            <h2>Min Timeplan</h2>
+            
+            <table>
+                <tr class="overskrift">
+                    <td>time</td>
+                    <td>økt</td>
+                    <td>Mandag</td>
+                    <td>Tirsdag</td>
+                    <td>Onsdag</td>
+                    <td>Torsdag</td>
+                    <td>Fredag</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="2">1</td>
+                    <td rowspan="2">IT</td>
+                    <td>Fri</td>
+                    <td rowspan="2">Matte</td>
+                    <td rowspan="2">Fysikk</td>
+                    <td rowspan="2">Religion</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Norsk</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td rowspan="2">2</td>
+                    <td rowspan="2">Norsk</td>
+                    <td rowspan="2">Norsk</td>
+                    <td rowspan="2">Historie</td>
+                    <td rowspan="2">Matte</td>
+                    <td rowspan="2">IT</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>friminutt</td>
+                    <td>friminutt</td>
+                    <td>friminutt</td>
+                    <td>friminutt</td>
+                    <td>friminutt</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td rowspan="2">4</td>
+                    <td rowspan="2">Norsk</td>
+                    <td rowspan="2">Matte</td>
+                    <td rowspan="2">IT</td>
+                    <td rowspan="2">Fri</td>
+                    <td rowspan="2">Historie</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td rowspan="2">5</td>
+                    <td rowspan="2">Gym</td>
+                    <td rowspan="2">Fysikk</td>
+                    <td rowspan="2">Fri</td>
+                    <td rowspan="2">Fri</td>
+                    <td rowspan="2">Fri</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                </tr>
+            </table>
+            
+        </section>
+
     </main>
 </body>
 
