@@ -7,27 +7,48 @@
     <title>Timeplan</title>
 
     <style>
-        *{
+        * {
             box-sizing: border-box;
             margin: 0;
         }
-        body{
+
+        body {
             background-color: aliceblue;
         }
-        header{
+
+        header {
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: rgb(218, 218, 218);
             margin-bottom: 10px;
+            padding: 4px;
         }
-        .s1{
+
+        header a {
+            position: absolute;
+            left: 10px;
+        }
+
+        a>img {
+            border: solid 2px blue;
+            border-radius: 50%;
+            max-width: 35px;
+            transition: 0.15s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .s1 {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             gap: 8px;
         }
+
         table {
             background-color: antiquewhite;
             border-collapse: collapse;
@@ -57,20 +78,23 @@
 <body>
 
     <header>
-        <a href="hovedside.html">Hovedsiden</a>
+        <a href="hovedside.html">
+            <img src="https://image.spreadshirtmedia.net/image-server/v1/products/T1459A839MPA4459PT28X0Y31D11069033W10000H3770Cx000000/views/1,width=800,height=800,appearanceId=839,backgroundColor=F2F2F2/arrow-til-venstre-klistremerke.jpg"
+                alt="Bilde av pil">
+        </a>
         <h1>
             Min skolehverdag
-        </h1>        
+        </h1>
     </header>
 
     <main>
 
         <section class="s1">
 
-            
-            
+
+
             <h2>Min Timeplan</h2>
-            
+
             <table>
                 <tr class="overskrift">
                     <td>time</td>
@@ -140,7 +164,7 @@
                     <td>9</td>
                 </tr>
             </table>
-            
+
         </section>
 
     </main>
