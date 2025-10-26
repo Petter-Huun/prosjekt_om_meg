@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mine interesser</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -17,7 +19,8 @@
         }
 
         .bilde{
-            max-width: 450px;
+            max-width: 400px;
+            border-radius: 10px;
         }
 
         header {
@@ -33,6 +36,36 @@
             left: 10px;
         }
 
+        h1 {
+            font-size: 35px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        h3 {
+            font-size: 25px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            margin: 10px 0;
+        }
+
+        p {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            width: 400px;
+            border: 5px solid lightseagreen;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 10px;
+
+        }
+
         a>img {
             border: solid 2px blue;
             border-radius: 50%;
@@ -40,7 +73,7 @@
             transition: 0.15s;
         }
 
-        a > img:hover {
+        a>img:hover {
             transform: scale(1.05);
         }
 
@@ -60,24 +93,32 @@
         }
 
         #sec2 {
-            background-color: yellowgreen;
+            background-color: lightgreen;
             max-width: 100%;
             min-height: 50vh;
         }
 
-        section{
+        section {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            
         }
 
         .section1 {
             display: flex;
+            gap: 100px;
+            align-items: center;
+            padding: 10px;
         }
+         
 
         .section2 {
             display: flex;
+            gap: 100px;
+            align-items: center;
+            padding: 10px;
         }
 
         img>.section2 {
@@ -106,11 +147,12 @@
                     Jeg har stått på ski hele livet og besøkt
                     alle de store skisentrene i Norge og flere
                     rundt om i Europa. Jeg står ofte på ski på hytta
-                    eller her hjemme. Mitt beste skiminne er fra da 
-                    jeg var i østerrike med klubben min. Jeg er også 
+                    eller her hjemme. Mitt beste skiminne er fra da
+                    jeg var i østerrike med klubben min. Jeg er også
                     skitrener for 8-9år gamle barn.
                 </p>
-                <img class="bilde" src="https://snow-how.de/media/image/6e/30/7a/blog-was-ist-eigentlich-ein-slalomcarver.jpg">
+                <img class="bilde"
+                    src="https://snow-how.de/media/image/6e/30/7a/blog-was-ist-eigentlich-ein-slalomcarver.jpg">
 
 
             </div>
@@ -120,9 +162,10 @@
             <h3>Fotball</h3>
             <div class="section2">
                 <p>
-                    Jeg har spilt fotball i mange år og følger
-                    aktivt med på spesielt engelsk fotball.
-                    favorittlaget mitt er liverpool, og jeg ser
+                    Jeg har selv spilt fotball i mange år og 
+                    det var en av favorittsportene mine . Jeg 
+                    følger aktivt med på spesielt engelsk fotball.
+                    Favorittlaget mitt er liverpool, og jeg ser
                     hver kamp de spiller. Jeg vil gjerne dra til
                     Anfield å se de spille.
                 </p>
