@@ -106,6 +106,10 @@ header>h2 {
 
 }
 
+.sabeltann{
+    max-height: 240px;
+}
+
 .seksjon1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
