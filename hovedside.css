@@ -96,20 +96,15 @@ header>h2 {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .bilde1{
-    max-width: 200px;
     border-radius: 10px;
+    max-height: 230px;
 
 }
-
-/*.bredboks {
-    grid-column-start: 1;
-    grid-column-end: 4;
-
-}
-*/
 
 .seksjon1 {
     display: grid;
